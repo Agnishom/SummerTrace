@@ -45,6 +45,8 @@ Replace the original directories with those from the repository
 
 # The Tools
 
+The tools described below are a part of `uniqPaths.py` in the [tools directory](https://github.com/Agnishom/SummerTrace/blob/master/tools/uniqPaths.py).
+
 ## An word on the patches
 
 The patches are simply modifications of the angr library which ensure a log of which SimProcedures were called. The tools supplied are an example of how the binary might be explored to use these.
