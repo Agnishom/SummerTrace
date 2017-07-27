@@ -34,7 +34,7 @@ You should get something like `<module 'simuvex' from '/home/agnishom/.virtualen
 
 Requirements: `git` (or can be downloaded manually)
 
-1. `$ git clone <bla>`
+1. `$ git clone https://github.com/Agnishom/SummerTrace.git`
 2. Locate the directories `syscalls` and `libc__so__6` inside the repository.
 
 ### Replace the directories
