@@ -10,7 +10,7 @@ class strncmp(simuvex.SimProcedure):
     def run(self, a_addr, b_addr, limit, a_len=None, b_len=None): #pylint:disable=arguments-differ
 
         #additional code
-        trace_data = ("strncmp", {"a_addr": (a_addr, a_addr.symbolic), "b_addr": (b_addr, b_addr.symbolic), "limit": (limit, limit.symbolic),"a_len": (a_len, a_len.symbolic), "b_len": (b_len, b_len.symbolic)})
+        trace_data = ("strncmp", {"a_addr": (a_addr, a_addr.symbolic), "b_addr": (b_addr, b_addr.symbolic), "limit": (limit, limit.symbolic),"a_len": a_len, "b_len": b_len})
         try:
             self.state.procedure_data.global_variables["trace"].append(trace_data)
         except KeyError:

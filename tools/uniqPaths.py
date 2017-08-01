@@ -30,7 +30,7 @@ def symbolicLibcCalls(path_to_binary, use_sim_procedures=True, try_multiple_args
         state.add_constraints(argc < max_args)
         pg = p.factory.path_group(state)
     else:
-        pg = p.factory.path_group(state)
+        pg = p.factory.path_group()
     while len(pg.active) > 0:
         deadNow = len(pg.deadended)
         pg.step()
